@@ -19,13 +19,13 @@ def health_check():
 def predict(alert: Alert):
     input_data = {
        
-    "Category": alert.Category,
-        "Impact": alert.Impact,
-        "Priority": alert.Priority,
-        "Type": alert.Type,
+    "Category": alert.category_input,
+        "Impact": alert.impact_input,
+        "Priority": alert.priority_input,
+        "Type": alert.type_input,
         "Created_time": alert.Created_time,
         "Due_by_Time": alert.Due_by_Time,
-        "Sub_category": alert.Sub_category,
+        "Sub_category": alert.sub_category_input,
         "Status": alert.Status
     }
     try:

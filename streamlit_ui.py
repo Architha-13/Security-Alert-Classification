@@ -18,11 +18,11 @@ st.markdown("Enter alert details and call the FastAPI `/predict` endpoint.")
 # ---------------------------
 with st.form("prediction_form"):
 
-    Category = st.selectbox("Category", list(Category.keys()))
-    Impact = st.selectbox("Impact", ["High", "Medium", "Low"])
-    Priority = st.selectbox("Priority", ["Low", "Medium", "High", "Urgent"])
-    Sub_category = st.selectbox("Sub Category", list(Sub_category.keys()))
-    Type = st.selectbox("Type", list(Type.keys()))
+    category_input = st.selectbox("Category", list(Category.keys()))
+    impact_input = st.selectbox("Impact", ["High", "Medium", "Low"])
+    priority_input = st.selectbox("Priority", ["Low", "Medium", "High", "Urgent"])
+    sub_category_input = st.selectbox("Sub Category", list(Sub_category.keys()))
+    type_input = st.selectbox("Type", list(Type.keys()))
 
     st.markdown("### ⏱️ Time Inputs")
 
