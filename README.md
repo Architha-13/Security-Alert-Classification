@@ -1,10 +1,10 @@
-# 🔐 Cyber Security Alert Classification System
+# Cyber Security Alert Classification System
 
 A machine learning-powered system to classify cyber security alerts using structured metadata and BERT-based text embeddings.
 
 ---
 
-## 🚀 Overview
+## Overview
 This project provides an end-to-end pipeline:
 - FastAPI backend for prediction
 - BERT embeddings for alert text (Status)
@@ -13,7 +13,7 @@ This project provides an end-to-end pipeline:
 
 ---
 
-## 🧠 Features
+## Features
 - Validates inputs using Pydantic schemas
 - Converts categorical inputs into model-ready format
 - Uses BERT (bert-base-uncased) for text embeddings
@@ -24,7 +24,7 @@ This project provides an end-to-end pipeline:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 API/
 ├── config/              # Label mappings
 ├── models/              # Model + prediction logic
@@ -35,12 +35,12 @@ requirements.txt
 
 ---
 
-## ⚙️ Installation
+## Installation
 pip install -r requirements.txt
 
 ---
 
-## ▶️ Run the Application
+## Run the Application
 
 ### Start FastAPI server
 cd API
@@ -51,7 +51,7 @@ streamlit run streamlit_ui.py
 
 ---
 
-## 🔌 API Endpoints
+## API Endpoints
 
 ### Health Check
 GET /health
@@ -73,7 +73,7 @@ POST /predict
 
 ---
 
-## 📊 Output
+## Output
 {
   "predicted_category": "True Positive",
   "confidence": 0.87,
@@ -88,19 +88,19 @@ POST /predict
 
 ---
 
-## 🧪 Model Details
+## Model Details
 - Embeddings: BERT (768-dim)
 - Classifier: Pre-trained ML model (security_alert.pkl)
 - Labels: Benign, False Positive, Report, True Positive, Wireless
 
 ---
 
-## 📌 Notes
+## Notes
 - Ensure label names match training data exactly
 - Time inputs must be valid ISO format
 - Model expects aligned feature columns
 
 ---
 
-## 📜 License
+## License
 MIT License
