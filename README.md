@@ -91,7 +91,7 @@ POST /predict
 ## Model Details
 - Embeddings: BERT (768-dim)
 - Classifier: Pre-trained ML model (security_alert.pkl)
-- Labels: Benign, False Positive, Report, True Positive, Wireless
+- Labels: Benign, False Positive, Report, True Positive
 
 ---
 
