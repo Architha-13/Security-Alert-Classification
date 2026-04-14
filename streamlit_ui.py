@@ -1,11 +1,11 @@
 import streamlit as st
 import requests
 from datetime import datetime
-from config.details import Type, Priority, Sub_category, Impact, Category
+from API.config.details import Type, Priority, Sub_category, Impact, Category
 
 
 # API endpoint
-API_URL = "http://127.0.0.1:8000/predict"
+API_URL = "http://localhost:8000/predict"
 
 st.set_page_config(page_title="API Tester", layout="centered")
 
@@ -48,11 +48,11 @@ if submit:
     Due_by_Time = datetime.combine(due_date, due_time)
 
     payload = {
-        "Category": Category,
-        "Impact": Impact,
-        "Priority": Priority,
-        "Sub_category": Sub_category,
-        "Type": Type,
+        "category_input": category_input,
+        "impact_input": impact_input,
+        "priority_input": priority_input,
+        "sub_category_input": sub_category_input,
+        "type_input": type_input,
         "Created_time": Created_time.isoformat(),
         "Due_by_Time": Due_by_Time.isoformat(),
         "Status": Status

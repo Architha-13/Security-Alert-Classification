@@ -31,12 +31,12 @@ def predict_risk(alert):
         expected_columns = model.feature_names_in_.tolist()
 
         input_data = {
-            "Category": alert.Category,
-            "Impact": alert.Impact,
-            "Priority": alert.Priority,
-            "Type": alert.Type,
+            "Category": alert.category_input,
+            "Impact": alert.impact_input,
+            "Priority": alert.priority_input,
+            "Type": alert.type_input,
             "time_to_close": alert.time_to_close_seconds,
-            "Sub_Category": alert.Sub_category,
+            "Sub_Category": alert.sub_category_input,
             **emb_dict
         }
 
