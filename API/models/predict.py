@@ -2,7 +2,7 @@ import pickle
 import pandas as pd
 from transformers import AutoTokenizer, AutoModel
 import torch
-from config.details import class_labels
+from APIconfig.details import class_labels
 
 Model_Version = "1.0.0"
 
