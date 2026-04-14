@@ -6,7 +6,7 @@ from API.config.details import class_labels
 
 Model_Version = "1.0.0"
 
-with open("models/security_alert.pkl", "rb") as f:
+with open("API/models/security_alert.pkl", "rb") as f:
     model = pickle.load(f)
 
 tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
