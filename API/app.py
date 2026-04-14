@@ -1,5 +1,5 @@
-from APIfastapi import FastAPI
-from API.fastapi.responses import JSONResponse
+from fastapi import FastAPI
+from fastapi.responses import JSONResponse
 from API.models.predict import predict_risk, Model_Version
 from API.schema.user_input import Alert
 from API.schema.prediction_response import PredictionResponse

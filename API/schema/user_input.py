@@ -1,6 +1,6 @@
 from pydantic import BaseModel, Field, computed_field, field_validator
 from typing import Annotated
-from config.details import Category, Sub_category, Impact, Type, Priority
+from API.config.details import Category, Sub_category, Impact, Type, Priority
 
 class Alert(BaseModel):
     category_input: Annotated[str, Field(description="Category of the alert", example="Email Sec")]
