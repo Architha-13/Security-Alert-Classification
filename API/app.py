@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
-from models.predict import predict_risk, Model_Version
-from schema.user_input import Alert
-from schema.prediction_response import PredictionResponse
+from API.models.predict import predict_risk, Model_Version
+from API.schema.user_input import Alert
+from API.schema.prediction_response import PredictionResponse
 
 
 app = FastAPI()
